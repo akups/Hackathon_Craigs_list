@@ -49,10 +49,7 @@ function dynamicCardRendering(arr) {
   });
 }
 
-<<<<<<< HEAD
 document.querySelector("load").onclick = function() {
-=======
 document.querySelector(".load").onclick = function() {
->>>>>>> 86ddc233a0b8f49b579090f8a44b75398a4b7fac
   dynamicCardRendering(listings);
-};
+}
