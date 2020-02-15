@@ -29,7 +29,6 @@ const listings = [
   }
 ];
 
-
 function dynamicCardRendering(listings) {
   const cardsWrapper = document.querySelector("cards-wrapper");
 
@@ -50,6 +49,7 @@ function dynamicCardRendering(listings) {
 }
 
 document.querySelector("load").onclick = function() {
-document.querySelector(".load").onclick = function() {
-  dynamicCardRendering(listings);
-}
+  document.querySelector(".load").onclick = function() {
+    dynamicCardRendering(listings);
+  };
+};
