@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./data.js"></script>
+  </head>
+
+  <body id="bootstrap-overrides">
+    <!-- NAV BAR -->
+    <ul class="nav">
+      <div class="logo">
+        <p>Craigslist</p>
+      </div>
+      <!-- Neighbourhood Dropdown -->
+      <div class="nav-links">
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          data-toggle="dropdown"
+          href="#"
+          role="button"
+          aria-haspopup="true"
+          aria-expanded="false"
+          >Neighbourhood</a
+        >
+        <div class="dropdown-menu">
+          <form action="/" method="post">
+            <input type="checkbox" name="neighborhood" value="Friedrichshain"> <label>Friedrichshain</label> <br/>
+            <input type="checkbox" name="neighborhood" value="Prenzlauer Berg"> <label>Prenzlauer Berg</label> <br/>
+            <input type="checkbox" name="neighborhood" value="Kreuzberg"> <label>Kreuzberg</label> <br/>
+            <input type="checkbox" name="neighborhood" value="Wedding"> <label>Wedding</label> <br/>
+            <input type="checkbox" name="neighborhood" value="Moabit"> <label>Moabit</label> <br/>
+            <input type="checkbox" name="neighborhood" value="Lichtenberg"> <label>Lichtenberg</label> <br/>
+            <button>Apply</button>
+          </form>
+        </div>
+      </li>
+
+      <!-- Rooms Dropdown -->
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          data-toggle="dropdown"
+          href="#"
+          role="button"
+          aria-haspopup="true"
+          aria-expanded="false"
+          >Rooms</a
+        >
+        <div class="dropdown-menu">
+          <form action="/" method="post">
+            <input type="checkbox" name="rooms" value="1"> <label>1</label> <br/>
+            <input type="checkbox" name="rooms" value="2"> <label>2</label> <br/>
+            <input type="checkbox" name="rooms" value="3"> <label>3</label> <br/>
+            <input type="checkbox" name="rooms" value="4"> <label>4</label> <br/>
+            <input type="checkbox" name="rooms" value="5"> <label>5</label> <br/>
+            <button>Apply</button>
+          </form>
+        </div>
+      </li>
+
+      <!-- Budget Dropdown -->
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          data-toggle="dropdown"
+          href="#"
+          role="button"
+          aria-haspopup="true"
+          aria-expanded="false"
+          >Budget</a
+        >
+        <div class="dropdown-menu">
+          <form action="/" method="post">
+            <input type="text" name="min-price" placeholder="Minimum price"> <br/>
+            <input type="text" name="max-price" placeholder="Maximum price"><br/>
+            <button>Apply</button>
+          </form>
+        </div>
+      </li>
+
+      <!-- Size Dropdown -->
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          data-toggle="dropdown"
+          href="#"
+          role="button"
+          aria-haspopup="true"
+          aria-expanded="false"
+          >Size</a
+        >
+        <div class="dropdown-menu">
+          <form action="/" method="post">
+            <input type="text" name="min-size" placeholder="Minimum size"> <br/>
+            <input type="text" name="max-size" placeholder="Maximum size"><br/>
+            <button>Apply</button>
+          </form>
+        </div>
+      </li>
+    </ul>
+
+    <!-- CARDS -->
+    <div class="cards-wrapper container">
+      <div class="row">
+      <div class="card col-3">
+        <img src="https://cdn.archilovers.com/projects/c_383_874f4300-9cb7-44f9-9463-7600c8717d64.jpg">
+        <div class="card-text">
+        <p class="neighborhood">Neighbourhood</p>
+        <p class="title">Title of the listing</p>
+        <p class="price">Price</p>
+      </div></div>
+
+      <div class="card col-3">
+        <img src="https://cdn.archilovers.com/projects/c_383_874f4300-9cb7-44f9-9463-7600c8717d64.jpg">
+        <div class="card-text">
+        <p class="neighborhood">Neighbourhood</p>
+        <p class="title">Title of the listing</p>
+        <p class="price">Price</p>
+      </div>
+    </div>
+
+      <div class="card col-3">
+        <img src="https://cdn.archilovers.com/projects/c_383_874f4300-9cb7-44f9-9463-7600c8717d64.jpg">
+        <div class="card-text">
+        <p class="neighborhood">Neighbourhood</p>
+        <p class="title">Title of the listing</p>
+        <p class="price">Price</p>
+      </div>
+      </div>
+      </div>
+
+      <button class="load">Load more</button>
+
+    </div>
+    </div>
+  </div>
+  </body>
+</html>

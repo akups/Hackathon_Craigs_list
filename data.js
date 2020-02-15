@@ -1,7 +1,8 @@
 const listings = [
   {
     id: "1",
-    header: "Furnished, Unique, Ethnic Style Apt- For short or long period!!!!! 400",
+    header:
+      "Furnished, Unique, Ethnic Style Apt- For short or long period!!!!! 400",
     price: 400,
     number_of_bedrooms: null,
     size: null,
@@ -27,3 +28,32 @@ const listings = [
     picture_url: "https://images.craigslist.org/00808_2WFMCjjqS5F_600x450.jpg"
   }
 ];
+
+function dynamicCardRendering() {
+  const cardsWrapper = document.querySelector("cards-wrapper");
+
+  listings.forEach(el => {
+    document.querySelector("cards-wrapper").innerHTML = "";
+
+    const newRow = document.createElement("div").classList.addClass("row");
+    const newCard = document.createElement("div").classList.addClass("card");
+    const neighborhood = document
+      .createElement("p")
+      .classList.addClass("neighborhood");
+    const title = document.createElement("p").classList.addClass("title");
+    const price = document.createElement("p").classList.addClass("price");
+
+    newCard.innerHTML = `
+  ${neighborhood.innerText} = ${el.location};
+  ${title.innerText} = ${el.header};
+  ${price.innerText} = ${price} + "EUR"`;
+
+    newRow.appendChild(newCard);
+  });
+
+  cardsWrapper.appendChild(newRow);
+}
+
+document.querySelector("load").onclick = function() {
+  dynamicCardRendering();
+};

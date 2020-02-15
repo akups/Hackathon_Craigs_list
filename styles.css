@@ -1,0 +1,89 @@
+body {
+  background-color: lightgray;
+}
+
+/* Card styling */
+.cards-wrapper {
+  margin-top: 48px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  margin: 12px;
+  border: 5px solid white;
+}
+
+.card img {
+  height: 250px;
+  width: auto;
+}
+
+.card-text {
+  padding: 12px;
+}
+
+.neighborhood {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.title {
+  font-size: 16px;
+  margin: 0;
+}
+
+.price {
+  font-size: 16px;
+  margin: 0;
+}
+
+#bootstrap-overrides .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#bootstrap-overrides .col-3 {
+  padding: 0;
+}
+
+#bootstrap-overrides .nav {
+  background-color: white;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0px 24px;
+}
+
+#bootstrap-overrides input {
+  margin: 4px;
+}
+
+#bootstrap-overrides .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  margin-right: 24px;
+}
+
+#bootstrap-overrides .logo p {
+  margin: 0;
+}
+
+#bootstrap-overrides .nav-links {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: flex-end; */
+}
+
+#bootstrap-overrides .dropdown-menu {
+  min-width: 200px;
+  padding: 16px;
+}
