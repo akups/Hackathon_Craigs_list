@@ -1,10 +1,53 @@
+:root {
+  --purple: #800180;
+  --blue: #1f3151;
+}
+
 body {
+  font-family: "Lato", sans-serif;
   background-color: #fff;
+  letter-spacing: 1px;
+}
+
+h1 {
+  color: var(--purple);
+  font-size: 16px;
+  margin: 0;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.logo-bar {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.logo-bar img {
+  width: 150px;
+  height: auto;
+  margin: 0;
+}
+
+button {
+  background-color: var(--blue);
+  color: #fff;
+  width: 200px;
+  height: 40px;
+  margin: 16px;
+  border: none;
+  border-radius: 4px;
+}
+
+.input-field {
+  padding-left: 8px;
 }
 
 /* Card styling */
 .cards-wrapper {
-  margin-top: 48px;
+  margin: 48px auto;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -27,13 +70,24 @@ body {
   padding: 16px;
 }
 
+.neighborhood-box {
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 24px;
+  /* margin-left: -16px; */
+  margin-top: -40px;
+  z-index: 1;
+}
+
 .neighborhood {
   font-size: 12px;
-  color: #fff;
+  color: var(--purple);
+  margin: 0;
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-top: -40px;
 }
 
 .title {
@@ -42,22 +96,24 @@ body {
 }
 
 .card-size-price {
+  padding-top: 8px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .size {
-  font-size: 16px;
+  font-size: 18px;
   margin: 0;
 }
 
 .price {
-  font-size: 16px;
+  font-size: 18px;
   margin: 0;
 }
 
 #bootstrap-overrides .row {
+  width: 1440px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -68,11 +124,12 @@ body {
 }
 
 #bootstrap-overrides .nav {
-  background-color: white;
+  background-color: var(--purple);
+  color: #fff;
   height: 70px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   padding: 0px 24px;
   border-bottom: 1px solid lightgray;
 }
@@ -81,25 +138,21 @@ body {
   margin: 4px;
 }
 
-#bootstrap-overrides .logo {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-content: center;
-  margin-right: 24px;
-}
-
-#bootstrap-overrides .logo p {
-  margin: 0;
-}
-
 #bootstrap-overrides .nav-links {
   display: flex;
   flex-direction: row;
-  /* justify-content: flex-end; */
+  padding: 16px;
 }
 
 #bootstrap-overrides .dropdown-menu {
   min-width: 200px;
   padding: 16px;
+}
+
+#bootstrap-overrides .dropdown-toggle {
+  margin: auto 24px;
+}
+
+#bootstrap-overrides .dropdown a {
+  color: #fff;
 }

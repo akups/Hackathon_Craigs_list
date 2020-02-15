@@ -26,15 +26,19 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
     <script src="./data.js"></script>
   </head>
 
   <body id="bootstrap-overrides">
+    <!-- LOGO BAR -->
+    <div class="logo-bar">
+      <h1>Craigslist</h1>
+      <img src="/assets/logo.png">
+      <h1>Housing</h1>
+    </div>
     <!-- NAV BAR -->
     <ul class="nav">
-      <div class="logo">
-        <p>Craigslist</p>
-      </div>
       <!-- Neighbourhood Dropdown -->
       <div class="nav-links">
       <li class="nav-item dropdown">
@@ -96,8 +100,8 @@
         >
         <div class="dropdown-menu">
           <form action="/" method="post">
-            <input type="text" name="min-price" placeholder="Minimum price"> <br/>
-            <input type="text" name="max-price" placeholder="Maximum price"><br/>
+            <input type="text" class="input-field" name="min-price" placeholder="Minimum price"> <br/>
+            <input type="text" class="input-field" name="max-price" placeholder="Maximum price"><br/>
             <button>Apply</button>
           </form>
         </div>
@@ -116,8 +120,8 @@
         >
         <div class="dropdown-menu">
           <form action="/" method="post">
-            <input type="text" name="min-size" placeholder="Minimum size"> <br/>
-            <input type="text" name="max-size" placeholder="Maximum size"><br/>
+            <input type="text" class="input-field" name="min-size" placeholder="Minimum size"> <br/>
+            <input type="text" class="input-field" name="max-size" placeholder="Maximum size"><br/>
             <button>Apply</button>
           </form>
         </div>
@@ -128,19 +132,101 @@
     <div class="cards-wrapper container">
       <div class="row">
 
-      <div class="card col-3">
-        <img src="https://cdn.archilovers.com/projects/c_383_874f4300-9cb7-44f9-9463-7600c8717d64.jpg">
+        <div class="card col-3">
+          <img src="https://cdn.archilovers.com/projects/c_383_874f4300-9cb7-44f9-9463-7600c8717d64.jpg">
         <div class="card-text">
-        <p class="neighborhood">Neighbourhood</p>
-        <p class="title">Title of the listing</p>
-        <p class="price">Price</p>
-      </div></div>
+          <p class="neighborhood">Friedrichshain</p>
+          <!-- <p class="title">Title of the listing</p> -->
+          <div class="card-size-price">
+          <p class="size">45sqm</p>
+          <p class="price">700€</p>
+        </div>
+        </div>
+      </div>
+
+      <div class="card col-3">
+        <img src="https://a0.muscache.com/im/pictures/ce730769-91e4-4df0-b74e-d1b669b2dd8f.jpg?aki_policy=xx_large">
+      <div class="card-text">
+        <p class="neighborhood">Prenzlauer Berg</p>
+        <!-- <p class="title">Title of the listing</p> -->
+        <div class="card-size-price">
+        <p class="size">30sqm</p>
+        <p class="price">850€</p>
+      </div>
+      </div>
+    </div>
+
+    <div class="card col-3">
+      <img src="https://a0.muscache.com/im/pictures/f33f87e8-1535-474e-b6f2-1b34230d05d4.jpg?aki_policy=xx_large">
+    <div class="card-text">
+      <p class="neighborhood">Kreuzberg</p>
+      <!-- <p class="title">Title of the listing</p> -->
+      <div class="card-size-price">
+      <p class="size">40sqm</p>
+      <p class="price">700€</p>
+    </div>
+    </div>
+  </div>
+      </div>
+
+      <div class="row">
+
+        <div class="card col-3">
+          <img src="https://a0.muscache.com/im/pictures/2371dea7-de92-46bb-bdb6-0a3b19ef9a1d.jpg?aki_policy=xx_large">
+        <div class="card-text">
+          <p class="neighborhood">Mitte</p>
+          <!-- <p class="title">Title of the listing</p> -->
+          <div class="card-size-price">
+          <p class="size">50sqm</p>
+          <p class="price">1250€</p>
+        </div>
+        </div>
+      </div>
+
+      <div class="card col-3">
+        <img src="https://a0.muscache.com/im/pictures/fa88bc3b-8a75-4b01-9bb3-774cecfaf552.jpg?aki_policy=xx_large">
+      <div class="card-text">
+        <p class="neighborhood">Charlottenburg</p>
+        <!-- <p class="title">Title of the listing</p> -->
+        <div class="card-size-price">
+        <p class="size">45sqm</p>
+        <p class="price">900€</p>
+      </div>
+      </div>
+    </div>
+
+    <div class="card col-3">
+      <img src="https://a0.muscache.com/im/pictures/fcaba8e7-c388-48c1-ad6a-e5fb182a2e91.jpg?aki_policy=xx_large">
+    <div class="card-text">
+      <p class="neighborhood">Friedrichshain</p>
+      <!-- <p class="title">Title of the listing</p> -->
+      <div class="card-size-price">
+      <p class="size">65sqm</p>
+      <p class="price">900€</p>
+    </div>
+    </div>
+  </div>
+      </div>
+
+      <div class="row">
+
+        <div class="card col-3">
+          <img src="https://cdn.archilovers.com/projects/c_383_874f4300-9cb7-44f9-9463-7600c8717d64.jpg">
+        <div class="card-text">
+          <p class="neighborhood">Neukölln</p>
+          <!-- <p class="title">Title of the listing</p> -->
+          <div class="card-size-price">
+          <p class="size">30sqm</p>
+          <p class="price">1000€</p>
+        </div>
+        </div>
+      </div>
 
       <div class="card col-3">
         <img src="https://cdn.archilovers.com/projects/c_383_874f4300-9cb7-44f9-9463-7600c8717d64.jpg">
       <div class="card-text">
-        <p class="neighborhood">Neighbourhood</p>
-        <p class="title">Title of the listing</p>
+        <p class="neighborhood">Steglitz</p>
+        <!-- <p class="title">Title of the listing</p> -->
         <div class="card-size-price">
         <p class="size">30sqm</p>
         <p class="price">1000€</p>
@@ -148,14 +234,17 @@
       </div>
     </div>
 
-      <div class="card col-3">
-        <img src="https://cdn.archilovers.com/projects/c_383_874f4300-9cb7-44f9-9463-7600c8717d64.jpg">
-        <div class="card-text">
-        <p class="neighborhood">Neighbourhood</p>
-        <p class="title">Title of the listing</p>
-        <p class="price">Price</p>
-      </div>
-      </div>
+    <div class="card col-3">
+      <img src="https://cdn.archilovers.com/projects/c_383_874f4300-9cb7-44f9-9463-7600c8717d64.jpg">
+    <div class="card-text">
+      <p class="neighborhood">Wedding</p>
+      <!-- <p class="title">Title of the listing</p> -->
+      <div class="card-size-price">
+      <p class="size">30sqm</p>
+      <p class="price">1000€</p>
+    </div>
+    </div>
+  </div>
       </div>
 
       <button class="load">Load more</button>
