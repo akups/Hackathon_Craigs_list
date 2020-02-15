@@ -30,11 +30,10 @@ const listings = [
 ];
 
 function dynamicCardRendering(listings) {
-  const cardsWrapper = document.querySelector("cards-wrapper");
+  let cardsWrapper = document.querySelector(".cards-wrapper");
 
+  cardsWrapper.innerHTML = "";
   listings.forEach(el => {
-    document.querySelector(".cards-wrapper").innerHTML = "";
-
     const newCard = `<div class="card col-3">
         <img src="https://cdn.archilovers.com/projects/c_383_874f4300-9cb7-44f9-9463-7600c8717d64.jpg">
         <div class="card-text">
@@ -44,12 +43,11 @@ function dynamicCardRendering(listings) {
       </div>
     </div>`;
 
-    cardsWrapper.appendChild(newCard);
+    cardsWrapper.innerHTML += newCard;
   });
 }
 
-document.querySelector("load").onclick = function() {
-  document.querySelector(".load").onclick = function() {
-    dynamicCardRendering(listings);
-  };
+document.querySelector(".load").onclick = function() {
+  dynamicCardRendering(listings);
 };
+console.log(listings);
