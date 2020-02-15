@@ -29,7 +29,6 @@
 //   }
 // ];
 
-const listings = 
 
 function dynamicCardRendering(arr) {
   const cardsWrapper = document.querySelector("cards-wrapper");
