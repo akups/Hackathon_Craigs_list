@@ -55,5 +55,5 @@ function dynamicCardRendering() {
 }
 
 document.querySelector("load").onclick = function() {
-  dynamicCardRendering();
+  dynamicCardRendering(listings);
 };
