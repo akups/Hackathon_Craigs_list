@@ -46,7 +46,7 @@ const listings = [
     bedrooms: 2,
     size: 112,
     location: " Mitte",
-    picture: "https:\\/\\/images.craigslist.org\\/00404_hvNQ0G2OSeq_600x450.jpg"
+    picture: "https://images.craigslist.org/00S0S_evz3QPPuFV7_600x450.jpg"
   },
   {
     posted: "Feb 15",
@@ -55,7 +55,7 @@ const listings = [
     bedrooms: 2,
     size: 112,
     location: " Mitte",
-    picture: "https:\\/\\/images.craigslist.org\\/00404_hvNQ0G2OSeq_600x450.jpg"
+    picture: "https://images.craigslist.org/00z0z_gnM2xV9bM4F_600x450.jpg"
   },
   {
     posted: "Feb 15",
@@ -64,7 +64,7 @@ const listings = [
     bedrooms: 2,
     size: 112,
     location: " Mitte",
-    picture: "https:\\/\\/images.craigslist.org\\/00404_hvNQ0G2OSeq_600x450.jpg"
+    picture: "https://images.craigslist.org/00p0p_h6k650NEjrX_600x450.jpg"
   },
   {
     posted: "Feb 15",
@@ -73,7 +73,7 @@ const listings = [
     bedrooms: 0,
     size: 0,
     location: " Willmanndamm",
-    picture: "https:\\/\\/images.craigslist.org\\/00404_hvNQ0G2OSeq_600x450.jpg"
+    picture: "https://images.craigslist.org/00505_lNhZmGSoTDO_600x450.jpg"
   },
   {
     posted: "Feb 15",
