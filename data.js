@@ -29,31 +29,25 @@ const listings = [
   }
 ];
 
-function dynamicCardRendering() {
+function dynamicCardRendering(arr) {
   const cardsWrapper = document.querySelector("cards-wrapper");
 
-  listings.forEach(el => {
-    document.querySelector("cards-wrapper").innerHTML = "";
+  arr.forEach(el => {
+    document.querySelector(".cards-wrapper").innerHTML = "";
 
-    const newRow = document.createElement("div").classList.addClass("row");
-    const newCard = document.createElement("div").classList.addClass("card");
-    const neighborhood = document
-      .createElement("p")
-      .classList.addClass("neighborhood");
-    const title = document.createElement("p").classList.addClass("title");
-    const price = document.createElement("p").classList.addClass("price");
+    const newCard = `<div class="card col-3">
+        <img src="https://cdn.archilovers.com/projects/c_383_874f4300-9cb7-44f9-9463-7600c8717d64.jpg">
+        <div class="card-text">
+        <p class="neighborhood">${el.location}</p>
+        <p class="title">${el.title}</p>
+        <p class="price">${el.price}EUR</p>
+      </div>
+    </div>`;
 
-    newCard.innerHTML = `
-  ${neighborhood.innerText} = ${el.location};
-  ${title.innerText} = ${el.header};
-  ${price.innerText} = ${price} + "EUR"`;
-
-    newRow.appendChild(newCard);
+    cardsWrapper.appendChild(newCard);
   });
-
-  cardsWrapper.appendChild(newRow);
 }
 
-document.querySelector("load").onclick = function() {
-  dynamicCardRendering();
+document.querySelector(".load").onclick = function() {
+  dynamicCardRendering(listings);
 };
