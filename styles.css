@@ -1,5 +1,5 @@
 body {
-  background-color: lightgray;
+  background-color: #fff;
 }
 
 /* Card styling */
@@ -9,12 +9,13 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
   background-color: #fff;
   margin: 12px;
-  border: 5px solid white;
+  border: 1px solid lightgray;
 }
 
 .card img {
@@ -23,16 +24,30 @@ body {
 }
 
 .card-text {
-  padding: 12px;
+  padding: 16px;
 }
 
 .neighborhood {
   font-size: 12px;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  margin: 0;
+  margin-top: -40px;
 }
 
 .title {
+  font-size: 16px;
+  margin: 0;
+}
+
+.card-size-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.size {
   font-size: 16px;
   margin: 0;
 }
@@ -59,6 +74,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   padding: 0px 24px;
+  border-bottom: 1px solid lightgray;
 }
 
 #bootstrap-overrides input {
