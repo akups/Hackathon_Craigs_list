@@ -3,6 +3,10 @@
   --blue: #1f3151;
 }
 
+* {
+  margin-bottom: 0px;
+}
+
 body {
   font-family: "Lato", sans-serif;
   background-color: #fff;
@@ -45,6 +49,53 @@ button {
   padding-left: 8px;
 }
 
+footer {
+  width: 100vw;
+  height: auto;
+  background-color: var(--blue);
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 72px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-links a {
+  color: #fff;
+}
+
+.links-col {
+  display: flex;
+  flex-direction: column;
+  padding-right: 72px;
+}
+
+.social-icons img {
+  width: 60px;
+  height: 60px;
+  padding: 8px;
+}
+
+.copyright-line {
+  width: 100vw;
+  text-align: center;
+  color: #fff;
+}
+
+.copyright-line p {
+  font-size: 14px;
+  margin: 0px;
+  padding-bottom: 40px;
+}
+
 /* Card styling */
 .cards-wrapper {
   margin: 48px auto;
@@ -62,7 +113,7 @@ button {
 }
 
 .card img {
-  height: 250px;
+  height: 230px;
   width: auto;
 }
 
